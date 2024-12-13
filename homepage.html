@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Master</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">QUIZ MASTER</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-links">
+      <a href="#use-cases">Use Cases</a>
+      <a href="#features">Features</a>
+      <a href="#quizzes">Quizzes</a>
+      <a href="#surveys">Surveys</a>
+    </nav>
+    <button class="login-btn" onclick="window.location.href='signin.html'">Login</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="homepage">
+    <section class="hero">
+      <div class="overlay">
+        <h1>Quiz Master</h1>
+        <p>Create engaging quizzes and surveys for everyone!</p>
+        <p>
+          Get valuable feedback from users through structured surveys. Challenge yourself and enhance your knowledge with our fun quizzes!
+        </p>
+        <div class="buttons">
+          <button class="btn primary" onclick="window.location.href='signin.html'">Get Started</button>
+          <button class="btn secondary" onclick="window.location.href='question.html'">Take a Quiz</button>
+        </div>
+      </div>
+      <div class="decorations">
+        <img src="clock.png" alt="Clock" class="icon clock">
+        <img src="rocket.png" alt="Rocket" class="icon rocket">
+        <img src="alien.png" alt="Alien" class="icon alien">
+        <img src="paint.png" alt="Paint Palette" class="icon paint">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Quiz Master | The best online platform for quizzes and surveys</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-links');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
